@@ -1,0 +1,80 @@
+[data-loading] {
+  pointer-events: none;
+}
+[data-loading] button {
+  opacity: .5;
+}
+
+#loadFile {
+  position: fixed;
+  top: 5rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: #fff;
+  padding-top: 2rem;
+}
+
+#loadFile > div {
+  max-width: 40em;
+  padding: 0 1em;
+  margin: 0 auto;
+}
+
+#loadFile h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: #3993f3;
+}
+#loadFile h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+#loadFile img {
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+#loadFile select {
+  display: block;
+  font-size: 1.5rem;
+  max-width: 100%;
+  margin: auto;
+}
+
+#loadFile input[type="url"] {
+  width: 100%;
+}
+#loadFile .button i.fa {
+  vertical-align: middle;
+  margin-right: .25em;
+}
+#loadFile .button-colored {
+  display: block;
+  margin: 1em auto;
+}
+#loadFile button.loading {
+  display: none;
+  opacity: .5;
+}
+[data-loading] #loadFile button {
+  display: none;
+}
+[data-loading] #loadFile button.loading {
+  display: block;
+}
+
+#loadFile[data-hidden] {
+  display: none;
+}
+
+#loadFile .error {
+  display: none;
+}
+#loadFile[data-error] img {
+  width: 3em;
+}
+#loadFile[data-error] .error {
+  display: block;
+}

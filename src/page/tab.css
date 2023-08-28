@@ -1,0 +1,60 @@
+[data-role=menu-tab] > .tab {
+  padding: 1.5rem;
+  font-size: 1.2em;
+}
+
+[data-role=menu-tab] h2 {
+  margin-top: 1.5em;
+}
+[data-role=menu-tab] h2:first-child {
+  margin-top: 0;
+}
+
+[data-role=menu-tab] table {
+  border: 1px solid #666;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+[data-role=menu-tab] tr:hover {
+  background-color: #eee;
+}
+[data-role=menu-tab] tr.header,
+[data-role=menu-tab] tr.header:hover {
+  background-color: #7eb9f7;
+  color: #fff;
+}
+[data-role=menu-tab] th {
+  font-weight: 400;
+}
+[data-role=menu-tab] th,
+[data-role=menu-tab] td {
+  text-align: center;
+  min-width: 2em;
+}
+[data-role=menu-tab] tr {
+  border-bottom: 1px solid #eee;
+}
+[data-role=menu-tab] tr.max {
+  background-color: #fdc;
+}
+[data-role=menu-tab] tr:first-child,
+[data-role=menu-tab] tr:last-child {
+  border: 0;
+}
+[data-role=menu-tab] td.number {
+  text-align: right;
+}
+[data-role=menu-tab] td.button {
+  width: 4.5em;
+  padding-left: .5em;
+}
+
+[data-role=menu-tab] td i {
+  margin: 0 .2em;
+  width: 1.6em;
+  cursor: pointer;
+}
+[data-role=menu-tab] td i:hover {
+  color: #3993f3;
+}

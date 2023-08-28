@@ -1,0 +1,6 @@
+{
+  "server": "https://macarte-qualif.ign.fr/",
+  "viewer": "https://ignf.gitlab.io/macarte/mcviewer/?map=$ID&$NOTITLE",
+  "gppKey": "0gd4sx9gxx6ves3hf3hfeyhw",
+  "edugeoKey": "1mgehldv90vifl6s5ksf900i"
+}
