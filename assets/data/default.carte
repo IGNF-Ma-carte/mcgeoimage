@@ -38,6 +38,22 @@
   "layers": [
     {
       "type": "Geoportail",
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS",
+      "title": "Photographies aériennes",
+      "visibility": false,
+      "opacity": 1,
+      "description": "Photographies aériennes",
+      "copyright": "",
+      "popupContent": {},
+      "grayscale": false,
+      "blendMode": "",
+      "minZoom": null,
+      "maxZoom": null,
+      "crop": {},
+      "layer": "ORTHOIMAGERY.ORTHOPHOTOS"
+    },
+    {
+      "type": "Geoportail",
       "name": "Plan IGN",
       "titre": "sans-titre",
       "visibility": true,
