@@ -1,6 +1,14 @@
 # mcgeoimage
 *Macarte image geo-referencer app*
 
+<!--
+![](https://img.shields.io/github/v/release/IGNF-Ma-carte/mcgeoimage)
+-->
+![](https://img.shields.io/github/stars/IGNF-Ma-carte/mcgeoimage)
+![](https://img.shields.io/github/commit-activity/m/IGNF-Ma-carte/mcgeoimage)
+![](https://img.shields.io/github/contributors/IGNF-Ma-carte/mcgeoimage)
+![](https://img.shields.io/github/license/IGNF-Ma-carte/mcgeoimage)
+
 ## Installation et développement
 
 Voir la section générale [Installation & développement](https://github.com/IGNF-Ma-carte/.github/blob/main/DEVELOPING.md)
