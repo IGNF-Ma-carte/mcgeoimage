@@ -1,7 +1,7 @@
 import ol_ext_element from 'ol-ext/util/element'
 import imageMap from '../map/imageMap'
 
-import loadFile from './loadFile.html'
+import loadFile from './loadFile-page.html'
 
 import './loadFile.css'
 import carte from '../map/carte'

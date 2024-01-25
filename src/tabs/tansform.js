@@ -1,11 +1,10 @@
 import charte from 'mcutils/charte/macarte'
 import helmert, { calcTransform } from '../georef/georef'
 import { helpData } from 'mcutils/dialog/helpDialog'
-import InputCollection from 'ol-ext/util/input/Collection'
 
 import imageMap from '../map/imageMap'
 
-import html from '../page/tabTransform.html'
+import html from '../page/tabTransform-page.html'
 import '../page/tab.css'
 
 const tab = charte.addMenuTab('location', 'fi-geolocation', 'Transformer', html);
