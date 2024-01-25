@@ -27,7 +27,7 @@
     "parcel-plugin-txt": "^1.0.3"
   },
   "dependencies": {
-    "mcutils": "git+https://github.com/IGNF-Ma-carte/mcutils"
+    "mcutils": "github:IGNF-Ma-carte/mcutils#1.0.4"
   },
   "staticFiles": {
     "staticPath": [
