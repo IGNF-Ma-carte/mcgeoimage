@@ -10,7 +10,6 @@ import '../page/carte.css'
 
 // Carte
 const carte = new Carte({
-  url: './data/default.carte',
   key: config.gppKey,
   target: charte.getAppElement()
 });
@@ -51,6 +50,9 @@ carte.on('read', () => {
 carte.on('error', () => {
   dlgload.showAlert('Une erreur est survenue !<br/>Impossible de lire la carte...')
 })
+
+import template from './template.carte'
+carte.read(template)
 
 // Show / hide image on space key
 document.addEventListener('keydown', (e) => {
