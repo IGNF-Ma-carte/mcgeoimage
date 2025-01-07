@@ -58,10 +58,13 @@
 }
 .tab.transform td.number {
   text-align: right;
+  width: 100%;
 }
 .tab.transform td.button {
   width: 4.5em;
   padding-left: .5em;
+  margin: 0;
+  text-align: right;
 }
 
 .tab.transform td i {
