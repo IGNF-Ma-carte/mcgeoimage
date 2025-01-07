@@ -44,7 +44,6 @@ drawMask.on('change:active', () => {
   } else {
     map.removeOverlay(tip)
   }
-
 })
 drawMask.on('drawend', (e) => {
   drawMask.setActive(false);

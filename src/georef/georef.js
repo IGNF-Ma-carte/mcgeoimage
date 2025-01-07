@@ -13,6 +13,24 @@ import linkLayer from '../map/linkLayer'
 const helmert = new Helmert();
 
 let lastPx, lastPt
+let loading = false;
+
+
+function loadControlPoints(pts, l1, l2) {
+  loading = true;
+  pts.forEach(p => {
+    f1 = new Feature(new Point(p[0]))
+    f2 = new Feature(new Point(p[1]))
+    // Set control pair
+    f1.set('control', f2)
+    f2.set('control', f1)
+    // Add to layer
+    l1.addFeature(f1)
+    l2.addFeature(f2)
+  })
+  loading = false;
+  calcTransform();
+}
 
 function setControlPair(f1, f2, layer) {
   if (layer) {
@@ -29,6 +47,7 @@ function setControlPair(f1, f2, layer) {
 
 /* Control point matching */
 imageMap.getMap().on('addControlPoint', e => {
+  if (loading) return;
   if (lastPt && !lastPt.get('delete')) {
     setControlPair(e.feature, lastPt);
   } else if (helmert.hasControlPoints) {
@@ -38,6 +57,7 @@ imageMap.getMap().on('addControlPoint', e => {
   }
 })
 carte.getMap().on('addControlPoint', e => {
+  if (loading) return;
   if (lastPx && !lastPx.get('delete')) {
     setControlPair(e.feature, lastPx);
   } else if (helmert.hasControlPoints) {
@@ -66,13 +86,14 @@ imageMap.getMap().on('updateMask', e => {
     }
   } else {
     mask = null;
-    carte.geoimage.getSource().setMask()
+    if (carte.geoimage.getSource()) carte.geoimage.getSource().setMask()
   }
 })
 
 /* Calculate transform */
 function calcTransform() {
   const pts = imageMap.getControlPoints()
+  console.log(pts)
   helmert.setControlPoints(pts[0], pts[1]);
 
   if (pts[0].length > 1) {
@@ -143,5 +164,5 @@ imageMap.getMap().getView().on('change:center', e => {
   }
 })
 
-export { calcTransform }
+export { calcTransform, loadControlPoints }
 export default helmert

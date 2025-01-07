@@ -1,0 +1,23 @@
+[data-role="menu-tab"] .image .upload {
+  position: relative;
+  border: 5px dashed #3993f3;
+  padding: 1em 1em 1.5em;
+  text-align: center;
+}
+[data-role="menu-tab"] .image .upload[data-hover] {
+  background-color: rgba(57, 147, 243,.15);
+}
+
+[data-role="menu-tab"] .image .upload input {
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+}
+
+[data-role="menu-tab"] .image .upload i {
+  font-size: 3em;
+  display: block;
+}
+[data-role="menu-tab"] .image .upload label {
+  display: block;
+}
