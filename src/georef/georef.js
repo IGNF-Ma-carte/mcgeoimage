@@ -19,8 +19,8 @@ let loading = false;
 function loadControlPoints(pts, l1, l2) {
   loading = true;
   pts.forEach(p => {
-    f1 = new Feature(new Point(p[0]))
-    f2 = new Feature(new Point(p[1]))
+    const f1 = new Feature(new Point(p[0]))
+    const f2 = new Feature(new Point(p[1]))
     // Set control pair
     f1.set('control', f2)
     f2.set('control', f1)
